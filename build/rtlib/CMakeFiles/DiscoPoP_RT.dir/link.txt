@@ -1,0 +1,2 @@
+/usr/bin/ar qc libDiscoPoP_RT.a  CMakeFiles/DiscoPoP_RT.dir/iFunctions.cpp.o CMakeFiles/DiscoPoP_RT.dir/signature.cpp.o CMakeFiles/DiscoPoP_RT.dir/loop_counter.cpp.o
+/usr/bin/ranlib libDiscoPoP_RT.a

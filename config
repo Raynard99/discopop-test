@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+export CUGeneration="-g -O0 -fno-discard-value-names -Xclang -load -Xclang /backuphd/norouzi/discopop/build/libi/LLVMCUGeneration.so"
+
+export DPInstrumentation="-g -O0 -fno-discard-value-names -Xclang -load -Xclang /backuphd/norouzi/discopop/build/libi/LLVMDPInstrumentation.so"
+
+export DPHybrid="-S -load=/backuphd/norouzi/discopop/build/libi/LLVMDPInstrumentationOmission.so -dp-instrumentation-omission"
+
+export DPReduction="-g -O0 -fno-discard-value-names -Xclang -load -Xclang /backuphd/norouzi/discopop/build/libi/LLVMDPReduction.so"
+
+export DiscoPoP="-L/backuphd/norouzi/discopop/build/rtlib -lDiscoPoP_RT -lpthread"

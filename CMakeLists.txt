@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.4.3)
 project(DiscoPoP)
 
 set(CMAKE_CXX_STANDARD 11)
-
+execute_process(COMMAND source config RESULT_VARIABLE res)
 set(LLVM_DIR ${LLVM_DIST_PATH}/lib/cmake/llvm)
 find_package(LLVM 8.0 REQUIRED CONFIG)
 message(STATUS "Using LLVM version ${LLVM_PACKAGE_VERSION}")
@@ -23,4 +23,11 @@ add_subdirectory(CUGeneration)
 add_subdirectory(CUInstantiation)
 add_subdirectory(DPInstrumentation)
 add_subdirectory(DPReduction)
+add_subdirectory(DPInstrumentationOmission)
 add_subdirectory(rtlib)
+
+set(ENV{DPInstrumentation1} "-g\ -O0\ -fno-discard-value-names\ -Xclang\ -load\ -Xclang\ ${CMAKE_CURRENT_BINARY_DIR}/libi/LLVMDPInstrumentation.so")
+message("variable is $ENV{DPInstrumentation1}")
+
+
+

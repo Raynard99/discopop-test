@@ -41,6 +41,7 @@ namespace __dp
         int32_t end = begin + sigSlotSizeInByte - 1;
         sigElement oldValue = 0;
         sigElement temp = 0;
+        cout << "begin: " << begin << " end: " << end << endl;
         for (int i = end; i >= begin; --i)
         {
             temp = sigarray[i];

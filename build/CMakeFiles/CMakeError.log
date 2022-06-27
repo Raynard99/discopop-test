@@ -1,0 +1,30 @@
+Performing C SOURCE FILE Test C_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW failed with the following output:
+Change Dir: /home/raynardwidjaja/discopop/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_32f3d/fast && /usr/bin/make -f CMakeFiles/cmTC_32f3d.dir/build.make CMakeFiles/cmTC_32f3d.dir/build
+make[1]: Entering directory '/home/raynardwidjaja/discopop/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_32f3d.dir/src.c.o
+/usr/bin/cc   -fPIC -Werror=date-time -DC_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW   -Werror -Werror=unguarded-availability-new -o CMakeFiles/cmTC_32f3d.dir/src.c.o   -c /home/raynardwidjaja/discopop/build/CMakeFiles/CMakeTmp/src.c
+cc1: error: '-Werror=unguarded-availability-new': no option -Wunguarded-availability-new
+make[1]: *** [CMakeFiles/cmTC_32f3d.dir/build.make:66: CMakeFiles/cmTC_32f3d.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/raynardwidjaja/discopop/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_32f3d/fast] Error 2
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW failed with the following output:
+Change Dir: /home/raynardwidjaja/discopop/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_99e82/fast && /usr/bin/make -f CMakeFiles/cmTC_99e82.dir/build.make CMakeFiles/cmTC_99e82.dir/build
+make[1]: Entering directory '/home/raynardwidjaja/discopop/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_99e82.dir/src.cxx.o
+/usr/bin/c++    -fPIC -fvisibility-inlines-hidden -Werror=date-time -DCXX_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW   -Werror -Werror=unguarded-availability-new -o CMakeFiles/cmTC_99e82.dir/src.cxx.o -c /home/raynardwidjaja/discopop/build/CMakeFiles/CMakeTmp/src.cxx
+cc1plus: error: '-Werror=unguarded-availability-new': no option -Wunguarded-availability-new
+make[1]: *** [CMakeFiles/cmTC_99e82.dir/build.make:66: CMakeFiles/cmTC_99e82.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/raynardwidjaja/discopop/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_99e82/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
