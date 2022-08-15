@@ -23,7 +23,7 @@ LLVM_INCLUDE_DIR="/home/lukas/Programme/DP-LLVM/build/include"
 # file ending of profiler target files
 PROFILER_TARGETS=".cc .cpp .c"
 # command line arguments for execution of target program
-TARGET_CL_ARGS= "-f ../prot.20.aa"
+TARGET_CL_ARGS="-f ../prot.20.aa"
 # Root directory of target application
 TARGET_ROOT_DIR="."
 # Type of profiling (hybrid / dynamic)
@@ -230,7 +230,7 @@ time $bin_dir/dp_run $TARGET_CL_ARGS
 
 echo -e "${OUTPUT_COLOR}$PROFILING_TYPE Profiler done.${NO_COLOR}"
 
-###### Python analyzer
+# ###### Python analyzer
 
 # echo -e "${OUTPUT_COLOR}Executing Analyzer.${NO_COLOR}"
 
@@ -242,7 +242,7 @@ echo -e "${OUTPUT_COLOR}$PROFILING_TYPE Profiler done.${NO_COLOR}"
 
 # echo -e "${OUTPUT_COLOR}Analyzer done.${NO_COLOR}"
 
-###### FINISHED
+# ###### FINISHED
 # cd $START_DIR
 # echo -e "${OUTPUT_COLOR}FINISHED.${NO_COLOR}"
 
